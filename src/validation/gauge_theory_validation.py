@@ -9,6 +9,7 @@ field equation consistency, and quantum field theoretical predictions.
 
 import numpy as np
 import logging
+import time
 from typing import Dict, List, Tuple, Optional, Any, Union
 from dataclasses import dataclass
 from scipy.linalg import expm, logm, eigh
@@ -121,7 +122,7 @@ class SU3SU2U1ValidationFramework:
             quantum_corrections_consistent=quantum_corrections,
             experimental_agreement=experimental_agreement,
             validation_confidence=validation_confidence,
-            validation_timestamp=np.time.time()
+            validation_timestamp=time.time()
         )
         
         self.validation_history.append(metrics)

@@ -7,8 +7,8 @@ polymer corrections including μ=0.1 parameter validation, sinc(πμ) modificati
 verification, quantum geometric effects testing, and experimental predictions.
 """
 
-import numpy as np
-import logging
+\1
+import time
 from typing import Dict, List, Tuple, Optional, Any, Union
 from dataclasses import dataclass
 from scipy.special import sinc
@@ -129,7 +129,7 @@ class PolymerQGValidationFramework:
             experimental_observables_match=experimental_match,
             theoretical_consistency=theoretical_consistency,
             validation_confidence=validation_confidence,
-            validation_timestamp=np.time.time()
+            validation_timestamp=time.time()
         )
         
         self.validation_history.append(metrics)

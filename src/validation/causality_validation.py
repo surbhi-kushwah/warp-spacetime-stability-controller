@@ -9,6 +9,7 @@ paradox prevention with rigorous mathematical verification.
 
 import numpy as np
 import logging
+import time
 from typing import Dict, List, Tuple, Optional, Any
 from dataclasses import dataclass
 from scipy.optimize import minimize
@@ -100,7 +101,7 @@ class CausalityValidationFramework:
             energy_condition_satisfied=energy_condition,
             information_paradox_risk=paradox_risk,
             causality_confidence=causality_confidence,
-            validation_timestamp=np.time.time()
+            validation_timestamp=time.time()
         )
         
         self.validation_history.append(metrics)
@@ -120,7 +121,8 @@ class CausalityValidationFramework:
             g_tt = metric[0, 0] if metric.ndim == 2 else metric[..., 0, 0]
             
             # CTC condition: g_tt > 0 anywhere indicates timelike curves can close
-            ctc_indicators = np.where(g_tt > self.tolerance)
+            g_tt_array = np.atleast_1d(g_tt)
+            ctc_indicators = np.where(g_tt_array > self.tolerance)
             
             if len(ctc_indicators[0]) > 0:
                 logger.warning(f"Potential CTC detected at {len(ctc_indicators[0])} points")

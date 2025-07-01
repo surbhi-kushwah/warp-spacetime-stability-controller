@@ -13,8 +13,28 @@
 			"path": "../casimir-ultra-smooth-fabrication-platform"
 		},
 		{
+			"name": "energy",
+			"path": "../energy"
+		},
+		{
 			"name": "polymerized-lqg-matter-transporter",
 			"path": "../polymerized-lqg-matter-transporter"
+		},
+		{
+			"name": "su2-3nj-closedform",
+			"path": "../su2-3nj-closedform"
+		},
+		{
+			"name": "su2-3nj-generating-functional",
+			"path": "../su2-3nj-generating-functional"
+		},
+		{
+			"name": "su2-3nj-uniform-closed-form",
+			"path": "../su2-3nj-uniform-closed-form"
+		},
+		{
+			"name": "su2-node-matrix-elements",
+			"path": "../su2-node-matrix-elements"
 		},
 		{
 			"name": "warp-bubble-optimizer",

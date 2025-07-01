@@ -1,0 +1,43 @@
+{
+	"folders": [
+		{
+			"name": "warp-spacetime-stability-controller (main)",
+			"path": "."
+		},
+		{
+			"name": "casimir-environmental-enclosure-platform",
+			"path": "../casimir-environmental-enclosure-platform"
+		},
+		{
+			"name": "casimir-ultra-smooth-fabrication-platform",
+			"path": "../casimir-ultra-smooth-fabrication-platform"
+		},
+		{
+			"name": "polymerized-lqg-matter-transporter",
+			"path": "../polymerized-lqg-matter-transporter"
+		},
+		{
+			"name": "warp-bubble-optimizer",
+			"path": "../warp-bubble-optimizer"
+		}
+	],
+	"settings": {
+		"python.defaultInterpreterPath": "C:\\Program Files\\Python313\\python.exe",
+		"files.exclude": {
+			"**/.git": true,
+			"**/node_modules": true,
+			"**/__pycache__": true,
+			"**/.pytest_cache": true,
+			"**/venv": true,
+			"**/.venv": true
+		},
+		"powershell.cwd": "warp-spacetime-stability-controller (main)"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-python.python",
+			"ms-vscode.cpptools",
+			"james-yu.latex-workshop"
+		]
+	}
+}

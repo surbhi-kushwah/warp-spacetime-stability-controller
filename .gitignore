@@ -146,3 +146,6 @@ test_imports.py
 # Temporary files
 *.tmp
 *.temp
+
+# Update progress tracking
+update-progress.txt
